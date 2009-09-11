@@ -532,6 +532,20 @@ class ThrowProcessor extends NodeProcessor {
   }
 }
 
+class ConditionalExprProcessor extends NodeProcessor {
+  function pre_process($cur, $context, $contextData) {
+	$cond  = $cur->firstChild->nextSibling;
+	$true  = $cond->nextSibling;
+	$false = $true->nextSibling;
+
+	$context->process_down($true);
+	$context->write(" if ");
+	$context->process_down($cond);
+	$context->write(" else ");
+	$context->process_down($false);
+	return true;
+  }
+}
 
 class ProcessContext {
   private $indent = 0;
@@ -583,6 +597,7 @@ class ProcessContext {
           'AST:Try'                   => new TryProcessor(),
           'AST:Catch'                 => new CatchProcessor(),
           'AST:Throw'                 => new ThrowProcessor(),
+		  'AST:Conditional_expr'      => new ConditionalExprProcessor(),
     );
     $this->defaultProcessor = new NodeProcessor();
     $this->method_map = array(
