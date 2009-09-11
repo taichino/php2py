@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<AST:PHP_script xmlns:AST="http://www.phpcompiler.org/phc-1.1" xmlns:HIR="http://www.phpcompiler.org/phc-1.1" xmlns:MIR="http://www.phpcompiler.org/phc-1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<attrs>
+		<attr key="phc.filename"><string>ternary_test.php</string></attr>
+	</attrs>
+	<AST:Statement_list>
+		<AST:Eval_expr>
+			<attrs>
+				<attr key="phc.comments">
+					<string_list>
+					</string_list>
+				</attr>
+				<attr key="phc.filename"><string>ternary_test.php</string></attr>
+				<attr key="phc.line_number"><integer>2</integer></attr>
+			</attrs>
+			<AST:Assignment>
+				<attrs>
+					<attr key="phc.filename"><string>ternary_test.php</string></attr>
+					<attr key="phc.line_number"><integer>2</integer></attr>
+				</attrs>
+				<AST:Variable>
+					<attrs>
+						<attr key="phc.filename"><string>ternary_test.php</string></attr>
+						<attr key="phc.line_number"><integer>2</integer></attr>
+					</attrs>
+					<AST:Target xsi:nil="true" />
+					<AST:VARIABLE_NAME>
+						<attrs />
+						<value>num</value>
+					</AST:VARIABLE_NAME>
+					<AST:Expr_list>
+					</AST:Expr_list>
+				</AST:Variable>
+				<bool><!-- is_ref -->false</bool>
+				<AST:INT>
+					<attrs>
+						<attr key="phc.filename"><string>ternary_test.php</string></attr>
+						<attr key="phc.line_number"><integer>2</integer></attr>
+						<attr key="phc.unparser.source_rep"><string>10</string></attr>
+					</attrs>
+					<value>10</value>
+				</AST:INT>
+			</AST:Assignment>
+		</AST:Eval_expr>
+		<AST:Eval_expr>
+			<attrs>
+				<attr key="phc.comments">
+					<string_list>
+					</string_list>
+				</attr>
+				<attr key="phc.filename"><string>ternary_test.php</string></attr>
+				<attr key="phc.line_number"><integer>3</integer></attr>
+			</attrs>
+			<AST:Method_invocation>
+				<attrs>
+					<attr key="phc.filename"><string>ternary_test.php</string></attr>
+					<attr key="phc.line_number"><integer>3</integer></attr>
+					<attr key="phc.unparser.no_brackets"><bool>true</bool></attr>
+				</attrs>
+				<AST:Target xsi:nil="true" />
+				<AST:METHOD_NAME>
+					<attrs />
+					<value>print</value>
+				</AST:METHOD_NAME>
+				<AST:Actual_parameter_list>
+					<AST:Actual_parameter>
+						<attrs>
+							<attr key="phc.filename"><string>ternary_test.php</string></attr>
+							<attr key="phc.line_number"><integer>3</integer></attr>
+						</attrs>
+						<bool><!-- is_ref -->false</bool>
+						<AST:Conditional_expr>
+							<attrs>
+								<attr key="phc.filename"><string>ternary_test.php</string></attr>
+								<attr key="phc.line_number"><integer>3</integer></attr>
+							</attrs>
+							<AST:Bin_op>
+								<attrs>
+									<attr key="phc.filename"><string>ternary_test.php</string></attr>
+									<attr key="phc.line_number"><integer>3</integer></attr>
+									<attr key="phc.unparser.no_binop_brackets"><bool>true</bool></attr>
+								</attrs>
+								<AST:Variable>
+									<attrs>
+										<attr key="phc.filename"><string>ternary_test.php</string></attr>
+										<attr key="phc.line_number"><integer>3</integer></attr>
+									</attrs>
+									<AST:Target xsi:nil="true" />
+									<AST:VARIABLE_NAME>
+										<attrs />
+										<value>num</value>
+									</AST:VARIABLE_NAME>
+									<AST:Expr_list>
+									</AST:Expr_list>
+								</AST:Variable>
+								<AST:OP>
+									<attrs>
+										<attr key="phc.filename"><string>ternary_test.php</string></attr>
+										<attr key="phc.line_number"><integer>3</integer></attr>
+									</attrs>
+									<value>==</value>
+								</AST:OP>
+								<AST:INT>
+									<attrs>
+										<attr key="phc.filename"><string>ternary_test.php</string></attr>
+										<attr key="phc.line_number"><integer>3</integer></attr>
+										<attr key="phc.unparser.source_rep"><string>10</string></attr>
+									</attrs>
+									<value>10</value>
+								</AST:INT>
+							</AST:Bin_op>
+							<AST:STRING>
+								<attrs>
+									<attr key="phc.filename"><string>ternary_test.php</string></attr>
+									<attr key="phc.line_number"><integer>3</integer></attr>
+									<attr key="phc.unparser.is_doubly_quoted"><bool>true</bool></attr>
+									<attr key="phc.unparser.source_rep"><string>num is 10\n</string></attr>
+								</attrs>
+								<value encoding="base64">bnVtIGlzIDEwCg==</value>
+							</AST:STRING>
+							<AST:STRING>
+								<attrs>
+									<attr key="phc.filename"><string>ternary_test.php</string></attr>
+									<attr key="phc.line_number"><integer>3</integer></attr>
+									<attr key="phc.unparser.is_doubly_quoted"><bool>true</bool></attr>
+									<attr key="phc.unparser.source_rep"><string>num is not 10</string></attr>
+								</attrs>
+								<value>num is not 10</value>
+							</AST:STRING>
+						</AST:Conditional_expr>
+					</AST:Actual_parameter>
+				</AST:Actual_parameter_list>
+			</AST:Method_invocation>
+		</AST:Eval_expr>
+		<AST:Eval_expr>
+			<attrs>
+				<attr key="phc.comments">
+					<string_list>
+						<string></string>
+					</string_list>
+				</attr>
+				<attr key="phc.filename"><string>ternary_test.php</string></attr>
+				<attr key="phc.line_number"><integer>5</integer></attr>
+			</attrs>
+			<AST:Assignment>
+				<attrs>
+					<attr key="phc.filename"><string>ternary_test.php</string></attr>
+					<attr key="phc.line_number"><integer>5</integer></attr>
+				</attrs>
+				<AST:Variable>
+					<attrs>
+						<attr key="phc.filename"><string>ternary_test.php</string></attr>
+						<attr key="phc.line_number"><integer>5</integer></attr>
+					</attrs>
+					<AST:Target xsi:nil="true" />
+					<AST:VARIABLE_NAME>
+						<attrs />
+						<value>num2</value>
+					</AST:VARIABLE_NAME>
+					<AST:Expr_list>
+					</AST:Expr_list>
+				</AST:Variable>
+				<bool><!-- is_ref -->false</bool>
+				<AST:INT>
+					<attrs>
+						<attr key="phc.filename"><string>ternary_test.php</string></attr>
+						<attr key="phc.line_number"><integer>5</integer></attr>
+						<attr key="phc.unparser.source_rep"><string>20</string></attr>
+					</attrs>
+					<value>20</value>
+				</AST:INT>
+			</AST:Assignment>
+		</AST:Eval_expr>
+		<AST:Eval_expr>
+			<attrs>
+				<attr key="phc.comments">
+					<string_list>
+					</string_list>
+				</attr>
+				<attr key="phc.filename"><string>ternary_test.php</string></attr>
+				<attr key="phc.line_number"><integer>6</integer></attr>
+			</attrs>
+			<AST:Assignment>
+				<attrs>
+					<attr key="phc.filename"><string>ternary_test.php</string></attr>
+					<attr key="phc.line_number"><integer>6</integer></attr>
+				</attrs>
+				<AST:Variable>
+					<attrs>
+						<attr key="phc.filename"><string>ternary_test.php</string></attr>
+						<attr key="phc.line_number"><integer>6</integer></attr>
+					</attrs>
+					<AST:Target xsi:nil="true" />
+					<AST:VARIABLE_NAME>
+						<attrs />
+						<value>result</value>
+					</AST:VARIABLE_NAME>
+					<AST:Expr_list>
+					</AST:Expr_list>
+				</AST:Variable>
+				<bool><!-- is_ref -->false</bool>
+				<AST:Conditional_expr>
+					<attrs>
+						<attr key="phc.filename"><string>ternary_test.php</string></attr>
+						<attr key="phc.line_number"><integer>6</integer></attr>
+						<attr key="phc.unparser.needs_user_brackets"><bool>true</bool></attr>
+					</attrs>
+					<AST:Bin_op>
+						<attrs>
+							<attr key="phc.filename"><string>ternary_test.php</string></attr>
+							<attr key="phc.line_number"><integer>6</integer></attr>
+							<attr key="phc.unparser.no_binop_brackets"><bool>true</bool></attr>
+						</attrs>
+						<AST:Variable>
+							<attrs>
+								<attr key="phc.filename"><string>ternary_test.php</string></attr>
+								<attr key="phc.line_number"><integer>6</integer></attr>
+							</attrs>
+							<AST:Target xsi:nil="true" />
+							<AST:VARIABLE_NAME>
+								<attrs />
+								<value>num</value>
+							</AST:VARIABLE_NAME>
+							<AST:Expr_list>
+							</AST:Expr_list>
+						</AST:Variable>
+						<AST:OP>
+							<attrs>
+								<attr key="phc.filename"><string>ternary_test.php</string></attr>
+								<attr key="phc.line_number"><integer>6</integer></attr>
+							</attrs>
+							<value>==</value>
+						</AST:OP>
+						<AST:INT>
+							<attrs>
+								<attr key="phc.filename"><string>ternary_test.php</string></attr>
+								<attr key="phc.line_number"><integer>6</integer></attr>
+								<attr key="phc.unparser.source_rep"><string>10</string></attr>
+							</attrs>
+							<value>10</value>
+						</AST:INT>
+					</AST:Bin_op>
+					<AST:Variable>
+						<attrs>
+							<attr key="phc.filename"><string>ternary_test.php</string></attr>
+							<attr key="phc.line_number"><integer>6</integer></attr>
+						</attrs>
+						<AST:Target xsi:nil="true" />
+						<AST:VARIABLE_NAME>
+							<attrs />
+							<value>num</value>
+						</AST:VARIABLE_NAME>
+						<AST:Expr_list>
+						</AST:Expr_list>
+					</AST:Variable>
+					<AST:Conditional_expr>
+						<attrs>
+							<attr key="phc.filename"><string>ternary_test.php</string></attr>
+							<attr key="phc.line_number"><integer>6</integer></attr>
+							<attr key="phc.unparser.needs_user_brackets"><bool>true</bool></attr>
+						</attrs>
+						<AST:Bin_op>
+							<attrs>
+								<attr key="phc.filename"><string>ternary_test.php</string></attr>
+								<attr key="phc.line_number"><integer>6</integer></attr>
+								<attr key="phc.unparser.no_binop_brackets"><bool>true</bool></attr>
+							</attrs>
+							<AST:Variable>
+								<attrs>
+									<attr key="phc.filename"><string>ternary_test.php</string></attr>
+									<attr key="phc.line_number"><integer>6</integer></attr>
+								</attrs>
+								<AST:Target xsi:nil="true" />
+								<AST:VARIABLE_NAME>
+									<attrs />
+									<value>num2</value>
+								</AST:VARIABLE_NAME>
+								<AST:Expr_list>
+								</AST:Expr_list>
+							</AST:Variable>
+							<AST:OP>
+								<attrs>
+									<attr key="phc.filename"><string>ternary_test.php</string></attr>
+									<attr key="phc.line_number"><integer>6</integer></attr>
+								</attrs>
+								<value>==</value>
+							</AST:OP>
+							<AST:INT>
+								<attrs>
+									<attr key="phc.filename"><string>ternary_test.php</string></attr>
+									<attr key="phc.line_number"><integer>6</integer></attr>
+									<attr key="phc.unparser.source_rep"><string>20</string></attr>
+								</attrs>
+								<value>20</value>
+							</AST:INT>
+						</AST:Bin_op>
+						<AST:Variable>
+							<attrs>
+								<attr key="phc.filename"><string>ternary_test.php</string></attr>
+								<attr key="phc.line_number"><integer>6</integer></attr>
+							</attrs>
+							<AST:Target xsi:nil="true" />
+							<AST:VARIABLE_NAME>
+								<attrs />
+								<value>num2</value>
+							</AST:VARIABLE_NAME>
+							<AST:Expr_list>
+							</AST:Expr_list>
+						</AST:Variable>
+						<AST:Bin_op>
+							<attrs>
+								<attr key="phc.filename"><string>ternary_test.php</string></attr>
+								<attr key="phc.line_number"><integer>6</integer></attr>
+								<attr key="phc.unparser.no_binop_brackets"><bool>true</bool></attr>
+							</attrs>
+							<AST:Variable>
+								<attrs>
+									<attr key="phc.filename"><string>ternary_test.php</string></attr>
+									<attr key="phc.line_number"><integer>6</integer></attr>
+								</attrs>
+								<AST:Target xsi:nil="true" />
+								<AST:VARIABLE_NAME>
+									<attrs />
+									<value>num</value>
+								</AST:VARIABLE_NAME>
+								<AST:Expr_list>
+								</AST:Expr_list>
+							</AST:Variable>
+							<AST:OP>
+								<attrs>
+									<attr key="phc.filename"><string>ternary_test.php</string></attr>
+									<attr key="phc.line_number"><integer>6</integer></attr>
+								</attrs>
+								<value>+</value>
+							</AST:OP>
+							<AST:Variable>
+								<attrs>
+									<attr key="phc.filename"><string>ternary_test.php</string></attr>
+									<attr key="phc.line_number"><integer>6</integer></attr>
+								</attrs>
+								<AST:Target xsi:nil="true" />
+								<AST:VARIABLE_NAME>
+									<attrs />
+									<value>num2</value>
+								</AST:VARIABLE_NAME>
+								<AST:Expr_list>
+								</AST:Expr_list>
+							</AST:Variable>
+						</AST:Bin_op>
+					</AST:Conditional_expr>
+				</AST:Conditional_expr>
+			</AST:Assignment>
+		</AST:Eval_expr>
+		<AST:Eval_expr>
+			<attrs>
+				<attr key="phc.comments">
+					<string_list>
+					</string_list>
+				</attr>
+				<attr key="phc.filename"><string>ternary_test.php</string></attr>
+				<attr key="phc.line_number"><integer>7</integer></attr>
+			</attrs>
+			<AST:Method_invocation>
+				<attrs>
+					<attr key="phc.filename"><string>ternary_test.php</string></attr>
+					<attr key="phc.line_number"><integer>7</integer></attr>
+					<attr key="phc.unparser.no_brackets"><bool>true</bool></attr>
+				</attrs>
+				<AST:Target xsi:nil="true" />
+				<AST:METHOD_NAME>
+					<attrs />
+					<value>print</value>
+				</AST:METHOD_NAME>
+				<AST:Actual_parameter_list>
+					<AST:Actual_parameter>
+						<attrs>
+							<attr key="phc.filename"><string>ternary_test.php</string></attr>
+							<attr key="phc.line_number"><integer>7</integer></attr>
+						</attrs>
+						<bool><!-- is_ref -->false</bool>
+						<AST:Variable>
+							<attrs>
+								<attr key="phc.filename"><string>ternary_test.php</string></attr>
+								<attr key="phc.line_number"><integer>7</integer></attr>
+							</attrs>
+							<AST:Target xsi:nil="true" />
+							<AST:VARIABLE_NAME>
+								<attrs />
+								<value>result</value>
+							</AST:VARIABLE_NAME>
+							<AST:Expr_list>
+							</AST:Expr_list>
+						</AST:Variable>
+					</AST:Actual_parameter>
+				</AST:Actual_parameter_list>
+			</AST:Method_invocation>
+		</AST:Eval_expr>
+		<AST:Nop>
+			<attrs>
+				<attr key="phc.comments">
+					<string_list>
+					</string_list>
+				</attr>
+				<attr key="phc.filename"><string>ternary_test.php</string></attr>
+				<attr key="phc.line_number"><integer>8</integer></attr>
+			</attrs>
+		</AST:Nop>
+	</AST:Statement_list>
+</AST:PHP_script>
