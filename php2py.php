@@ -683,5 +683,3 @@ if (!file_exists($argv[1])) die("file : {$argv[1]} is not found\n");
 $context = new ProcessContext($argv[1]);
 $context->start_process();
 print $context->get_result(true);
-
-?>
