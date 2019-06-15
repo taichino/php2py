@@ -9,7 +9,7 @@ instead of php code.
 php2py.php requires "phc" (php compiler) installed.
 you can download it at the following link:
 
-http://www.phpcompiler.org/
+https://github.com/pbiggar/phc
 
 [ Example Use ]
 ----------------------------------------------------------------------
